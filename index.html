@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock-Paper-Scissors Game</title>
+  </head>
+
+  <body>
+    <div id="score-board">
+      <div id="wins"></div>
+      <div id="lost"></div>
+      <div id="tie"></div>
+      <button id="clear" onclick="Clear()">RESET</button>
+    </div>
+    <div class="container">
+      <h1>Rock-Paper-Scissors Game</h1>
+      <button class="rock" onclick="compare('rock');">
+        <img src="Pictures/Stone.png" class="icons" />
+        Rock</button
+      ><button class="paper" onclick="compare('paper');">
+        <img src="Pictures/Paper.png" class="icons" />
+        Paper</button
+      ><button class="scissors" onclick="compare('scissors'); ">
+        <img src="Pictures/Scissors.png" class="icons" />
+        Scissors
+      </button>
+      <div id="result"></div>
+      <div id="rules">
+        <p>Rules:</p>
+        <p class="rule-texts">
+          Stone wins against Scissors :
+          <img
+            src="Pictures/Stone-VS-Scissors.png"
+            class="rules-images"
+            id="stone-vs-scissors"
+          />
+        </p>
+        <p class="rule-texts">
+          Paper wins against Stone :
+          <img
+            src="Pictures/Stone-VS-Paper.png"
+            class="rules-images"
+            id="stone-vs-paper"
+          />
+        </p>
+        <p class="rule-texts">
+          Scissors wins against Paper :
+          <img
+            src="Pictures/Paper-VS-Scissors.png"
+            class="rules-images"
+            id="paper-vs-scissors"
+          />
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
